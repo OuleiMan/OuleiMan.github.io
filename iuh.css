@@ -1,0 +1,24 @@
+/***longing頁面 入門AND進階***/
+.loading {
+    display: flex;
+}
+
+.square {
+    height: 100px;
+    width: 100px;
+    background: teal;
+    animation: rotate 1s linear infinite both;
+}
+
+@keyframes rotate {
+    from {
+        transform: perspective(500px) rotateX(0deg) rotateY(0deg);
+    }
+    50% {
+        transform: perspective(500px) rotateX(180deg) rotateY(0deg);
+    }
+    100% {
+        transform: perspective(500px) rotateX(180deg) rotateY(180deg);
+    }
+}
+
